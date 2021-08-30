@@ -3,8 +3,14 @@
   margin-right: auto;
 
   background-color: $background-color-primery;
-  padding-top: 94px;
-  padding-bottom: 94px;
+
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .our-team__title-text {
@@ -13,7 +19,8 @@
 
 .our-team-list {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
 }
 
 .our-team-list__title-text {
@@ -45,8 +52,16 @@
   border-radius: 4px;
   box-shadow: 0px 4px 4px 0px $shadow-color;
 
+  width: 100%;
+
   &:not(:last-child) {
-    margin-right: 30px;
+    margin-bottom: 30px;
+  }
+
+  @media screen and (min-widrh: 1200) {
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
   }
 }
 

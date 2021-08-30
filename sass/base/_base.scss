@@ -37,7 +37,8 @@ textarea:focus {
 .logo,
 .address-list__link,
 .contact-list__link,
-.nav-list__link {
+.nav-list__link,
+.header-social-list__link {
   text-decoration: none;
 }
 
@@ -51,7 +52,8 @@ textarea:focus {
 .portfolio-section-list,
 .our-clients-list,
 .social-network-list,
-.footer-social-network-list {
+.footer-social-network-list,
+.header-social-list {
   list-style: none;
 }
 

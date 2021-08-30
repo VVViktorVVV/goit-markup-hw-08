@@ -4,9 +4,13 @@
 }
 .portfolio-nav-list {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
 
   margin-bottom: 50px;
+
+  // min-width: 1200px
+  // justify-content: center;
 }
 
 .portfolio-nav-list__iteam:not(:last-child) {
