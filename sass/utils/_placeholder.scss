@@ -1,0 +1,59 @@
+%button {
+  min-width: 200px;
+  height: 50px;
+  border-radius: 4px;
+  border-color: transparent;
+
+  background-color: $link-text-color;
+  color: $white-color;
+
+  font-family: inherit;
+  font-style: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+}
+
+%header-link {
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+
+  transition: color 250ms $cubic;
+}
+
+%social-network-link {
+  display: block;
+  width: 44px;
+  height: 44px;
+
+  border-radius: 50%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  transition: background-color 250ms $cubic;
+
+  color: $svg-icon-color;
+}
+
+%section-title {
+  margin-bottom: 50px;
+
+  color: $title-text-color;
+
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+}

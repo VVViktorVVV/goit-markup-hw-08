@@ -1,0 +1,107 @@
+.header {
+  width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+
+  border-bottom: 1px solid $border-portfolio-color;
+}
+
+.header {
+  .container {
+    display: flex;
+    align-items: center;
+  }
+}
+
+// Navigation
+
+.nav-list {
+  display: flex;
+  margin-left: 93px;
+}
+
+.nav-list__item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.nav-list__link {
+  @extend %header-link;
+
+  position: relative;
+  display: block;
+  color: $title-text-color;
+
+  &:hover,
+  &:focus {
+    color: $link-text-color;
+  }
+}
+
+.nav-list__link--active {
+  color: $link-text-color;
+
+  &::after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    content: "";
+    display: block;
+
+    width: 100%;
+    height: 4px;
+    background-color: $link-text-color;
+    border-radius: 2px;
+
+    animation: line 250ms linear forwards;
+  }
+}
+
+@keyframes line {
+  0% {
+    transform: translateY(1px) scale(0);
+  }
+
+  100% {
+    transform: translateY(1px) scale(1);
+  }
+}
+
+// Contact header
+
+.contact-list {
+  display: flex;
+  margin-left: auto;
+}
+
+.contact-list__item {
+  &:not(:last-child) {
+    margin-right: 50px;
+  }
+}
+.contact-list__link {
+  @extend %header-link;
+
+  display: flex;
+  align-items: center;
+  color: $main-text-color;
+
+  &:hover,
+  &:focus {
+    color: $link-text-color;
+  }
+}
+
+.contact-list__icon {
+  max-width: 20px;
+  margin-right: 10px;
+
+  fill: $main-text-color;
+
+  transition: fill 250ms $cubic;
+
+  .contact-list__link:hover &,
+  .contact-list__link:focus & {
+    fill: $link-text-color;
+  }
+}

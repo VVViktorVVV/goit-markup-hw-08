@@ -1,0 +1,144 @@
+.portfolio-section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.portfolio-nav-list {
+  display: flex;
+  justify-content: center;
+
+  margin-bottom: 50px;
+}
+
+.portfolio-nav-list__iteam:not(:last-child) {
+  margin-right: 8px;
+}
+
+.portfolio-nav-list__button {
+  padding: 6px 22px;
+  border-radius: 4px;
+  border-color: transparent;
+
+  background-color: $background-color-primery;
+  color: $title-text-color;
+
+  font-family: inherit;
+  font-style: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  cursor: pointer;
+
+  transition: background-color 250ms $cubic, color 250ms $cubic,
+    box-shadow 250ms $cubic;
+
+  &:hover,
+  &:focus {
+    background-color: $link-text-color;
+    color: $white-color;
+    box-shadow: 0px 4px 4px 0px $shadow-color;
+  }
+
+  &--active {
+    background-color: $link-text-color;
+    color: $white-color;
+  }
+}
+
+.portfolio-section-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.portfolio-section-list__iteam {
+  width: calc ((100% - 5%) / 3);
+  margin-right: 30px;
+  margin-bottom: 30px;
+
+  &:nth-child(3n) {
+    margin-right: 0;
+  }
+
+  &:nth-last-child(-n + 3) {
+    margin-bottom: 0;
+  }
+}
+
+.portfolio-section-list__link {
+  display: block;
+  text-decoration: none;
+
+  transition: box-shadow 250ms $cubic;
+
+  &:hover,
+  &:focus {
+    box-shadow: 0px 4px 4px 0px $shadow-color;
+  }
+
+  .overlay {
+    color: $white-color;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.58;
+    letter-spacing: 0.03em;
+  }
+}
+
+.portfolio-section-list__card-content {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 24px;
+  padding-right: 24px;
+
+  border-left: 1px solid $border-portfolio-color;
+  border-right: 1px solid $border-portfolio-color;
+  border-bottom: 1px solid $border-portfolio-color;
+}
+
+.portfolio-section-list__title-text {
+  margin-bottom: 4px;
+
+  color: $title-text-color;
+
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
+.portfolio-section-list__text {
+  color: $main-text-color;
+
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.03em;
+}
+
+.portfolio-card-img {
+  position: relative;
+  overflow: hidden;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  display: block;
+  width: 100%;
+  min-height: 100%;
+
+  background-color: $background-overlay;
+  padding: 63px 24px;
+
+  transform: translateY(101%);
+
+  transition: transform 250ms $cubic;
+
+  .portfolio-section-list__link:hover &,
+  .portfolio-section-list__link:focus & {
+    transform: translateY(0);
+  }
+}

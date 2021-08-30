@@ -1,0 +1,79 @@
+.our-team {
+  margin-left: auto;
+  margin-right: auto;
+
+  background-color: $background-color-primery;
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.our-team__title-text {
+  @extend %section-title;
+}
+
+.our-team-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.our-team-list__title-text {
+  margin-bottom: 10px;
+
+  color: $title-text-color;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.our-team li {
+  background-color: $white-color;
+}
+
+.our-team-list__text {
+  margin-bottom: 16px;
+
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.prof-cards {
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px 0px $shadow-color;
+
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+.prof-cards__content {
+  padding: 30px 32px 30px 32px;
+}
+
+.social-network-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.social-network-list__link {
+  @extend %social-network-link;
+
+  &:hover,
+  &:focus {
+    background-color: $link-text-color;
+    color: $border-portfolio-color;
+  }
+}
+
+.social-network-list__icon {
+  width: 20px;
+  height: 20px;
+
+  fill: currentColor;
+
+  transition: fill 250ms $cubic;
+}

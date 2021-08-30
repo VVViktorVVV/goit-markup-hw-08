@@ -1,0 +1,119 @@
+.footer {
+  margin-left: auto;
+  margin-right: auto;
+
+  background-color: $background-footer-color;
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  .container {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+  }
+}
+
+.address {
+  color: $white-color;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  font-style: normal;
+}
+.address-list__item:not(:last-child) {
+  margin-bottom: 8px;
+}
+
+.address-list__link {
+  color: $address-link-color;
+  transition: color 250ms $cubic;
+
+  &:hover,
+  &:focus {
+    color: $link-text-color;
+  }
+}
+
+.social-network-group__text {
+  margin-bottom: 20px;
+
+  color: $white-color;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.footer-social-network-list {
+  display: flex;
+}
+
+.footer-social-network__item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.footer-social-network__link {
+  @extend %social-network-link;
+
+  background-color: $background-footer-social-link;
+
+  &:focus,
+  &:hover {
+    background-color: $link-text-color;
+    color: $border-portfolio-color;
+  }
+}
+
+.social-network-group {
+  margin-left: 70px;
+}
+
+.footer-social-network__icon {
+  width: 20px;
+  height: 20px;
+
+  fill: $white-color;
+}
+
+.footer-form {
+  margin-left: 93px;
+  width: 570px;
+}
+
+.footer-form__text {
+  margin-bottom: 20px;
+
+  color: $white-color;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.footer-form__field {
+  width: 354px;
+  height: 50px;
+
+  padding: 15px;
+
+  border: 1px solid $address-link-color;
+  border-radius: 4px;
+}
+
+.footer-form__field:placeholder-shown {
+  background-color: transparent;
+  color: $address-link-color;
+
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+}
+
+.footer-form__field:not(:placeholder-shown) {
+  background-color: transparent;
+  color: $address-link-color;
+}

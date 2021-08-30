@@ -1,0 +1,74 @@
+body {
+  background-color: $white-color;
+  color: $main-text-color;
+
+  font-family: $main-text-family;
+  font-weight: $main-text-weight;
+  font-style: normal;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+input:hover,
+input:focus,
+textarea:hover,
+textarea:focus {
+  outline: 0;
+  outline-offset: 0;
+}
+
+.logo,
+.address-list__link,
+.contact-list__link,
+.nav-list__link {
+  text-decoration: none;
+}
+
+.nav-list,
+.contact-list,
+.our-pluses-list,
+.our-work-list,
+.our-team-list,
+.address-list,
+.portfolio-nav-list,
+.portfolio-section-list,
+.our-clients-list,
+.social-network-list,
+.footer-social-network-list {
+  list-style: none;
+}
+
+.title-text {
+  color: $title-text-color;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}

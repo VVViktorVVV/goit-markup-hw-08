@@ -1,0 +1,49 @@
+.our-clients {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.our-clients__title-text {
+  @extend %section-title;
+}
+
+.our-clients-list {
+  display: flex;
+}
+
+.our-clients-list__item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.our-clients-list__client-link {
+  width: 170px;
+  height: 92px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border: 1px solid $svg-icon-color;
+  border-radius: 4px;
+  color: $svg-icon-color;
+
+  transition: border-color 250ms $cubic;
+
+  &:hover,
+  &:focus {
+    border-color: $link-text-color;
+    cursor: pointer;
+    color: $link-text-color;
+  }
+}
+
+.our-clients-list__client-label {
+  fill: $svg-icon-color;
+}
+
+.our-clients-list__client-link:hover .our-clients-list__client-label,
+.our-clients-list__client-link:focus .our-clients-list__client-label {
+  fill: $link-text-color;
+
+  transition: fill 250ms $cubic;
+}
