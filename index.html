@@ -134,15 +134,30 @@
             <h2 class="our-work__title-text">Чем мы занимаемся</h2>
             <ul class="our-work-list">
                 <li class="our-work-list__direction">
-                    <img src="./image/box1.jpg" alt="занимаемся написанием кода" width="370" height="294">
+                    <picture>
+                        <source srcset="./image/work/box1.webp 1x, ./image/work/box1.2x.webp 2x"
+                            type="image/webp" />
+                        <source srcset="./image/work/box1.jpg 1x, ./image/work/box1.2x.jpg 2x"
+                            type="image/jpeg" />
+
+                        <img src="./image/work/box1.jpg" alt="занимаемся написанием кода" width="370" height="294">
+                    </picture>
                     <p class="our-work-list__title">Десктопные приложения</p>
                 </li>
                 <li class="our-work-list__direction">
-                    <img src="./image/box2.jpg" alt="адаптируем продукт ко всем видам устройств" width="370" height="294">
+                    <picture>
+                        <source srcset="./image/work/box2.webp 1x, ./image/work/box2.2x.webp 2x" type="image/webp" />
+                        <source srcset="./image/work/box2.jpg 1x, ./image/work/box2.2x.jpg 2x" type="image/jpeg" />
+                        <img src="./image/work/box2.jpg" alt="адаптируем продукт ко всем видам устройств" width="370" height="294">
+                    </picture>
                     <p class="our-work-list__title">Мобильные приложения</p>
                 </li>
                 <li class="our-work-list__direction">
-                    <img src="./image/box3.jpg" alt="разрабатываем дизайн" width="370" height="294">
+                    <picture>
+                        <source srcset="./image/work/box3.webp 1x, ./image/work/box3.2x.webp 2x" type="image/webp" />
+                        <source srcset="./image/work/box3.jpg 1x, ./image/work/box3.2x.jpg 2x" type="image/jpeg" />
+                        <img src="./image/work/box3.jpg" alt="разрабатываем дизайн" width="370" height="294">
+                    </picture>
                     <p class="our-work-list__title">Дизайнерские решения</p>
                 </li>
             </ul>
@@ -156,7 +171,16 @@
             <h2 class="our-team__title-text">Наша команда</h2>
             <ul class="our-team-list">
                 <li class="prof-cards">
-                    <img src="./image/product-designer.jpg" alt="Игорь Демьяненко" width="270" height="260">
+                    <div class="prof-cards__thumb">
+                    <picture>
+                        <source srcset="./image/team/product-designer.webp 1x, ./image/team/product-designer2x.webp 2x"
+                            type="image/webp" />
+                        <source srcset="./image/team/product-designer.jpg 1x, ./image/team/product-designer2x.jpg 2x"
+                            type="image/jpeg" />
+
+                        <img src="./image/team/product-designer.jpg" alt="Игорь Демьяненко" width="270">
+                    </picture>
+                    </div>
                     <div class="prof-cards__content">
                         <h3 class="our-team-list__title-text">Игорь Демьяненко</h3>
                         <p lang="en" class="our-team-list__text">Product Designer</p>
@@ -192,7 +216,14 @@
                         </ul>
                     </div>
                     <li class="prof-cards">
-                    <img src="./image/frontend-developer.jpg" alt="Ольга Репина" width="270" height="260">
+                        <div class="prof-cards__thumb">
+                        <picture>
+                            <source srcset="./image/team/frontend-developer.webp 1x, ./image/team/frontend-developer2x.webp 2x" type="image/webp" />
+                            <source srcset="./image/team/frontend-developer.jpg 1x, ./image/team/frontend-developer2x.jpg 2x" type="image/jpeg" />
+
+                            <img src="./image/team/frontend-developer.jpg" alt="Ольга Репина" width="270">
+                        </picture>
+                        </div>
                     <div class="prof-cards__content">
                     <h3 class="our-team-list__title-text">Ольга Репина</h3>
                     <p lang="en" class="our-team-list__text">Frontend Developer</p>
@@ -230,7 +261,15 @@
                     </div>
                 </li>
                 <li class="prof-cards">
-                    <img src="./image/marketing.jpg" alt="Николай Тарасов" width="270" height="260">
+                    <div class="prof-cards__thumb">
+                        <picture>
+                            <source srcset="./image/team/marketing.webp 1x, ./image/team/marketing2x.webp 2x"
+                                type="image/webp" />
+                            <source srcset="./image/team/marketing.jpg 1x, ./image/team/marketing2x.jpg 2x"
+                                type="image/jpeg" />
+                            <img src="./image/team/marketing.jpg" alt="Николай Тарасов" width="270">
+                        </picture>
+                    </div>
                     <div class="prof-cards__content">
                     <h3 class="our-team-list__title-text">Николай Тарасов</h3>
                     <p lang="en" class="our-team-list__text">Marketing</p>
@@ -268,7 +307,13 @@
                     </div>
                 </li>
                 <li class="prof-cards">
-                    <img src="./image/ui-designer.jpg" alt="Михаил Ермаков" width="270" height="260">
+                    <div class="prof-cards__thumb">
+                        <picture>
+                            <source srcset="./image/team/ui-designer.webp 1x, ./image/team/ui-designer2x.webp 2x" type="image/webp" />
+                            <source srcset="./image/team/ui-designer.jpg 1x, ./image/team/ui-designer2x.jpg 2x" type="image/jpeg" />
+                            <img src="./image/team/ui-designer.jpg" alt="Михаил Ермаков" width="270">
+                        </picture>
+                    </div>
                     <div class="prof-cards__content">
                     <h3 class="our-team-list__title-text">Михаил Ермаков</h3>
                     <p lang="en" class="our-team-list__text">UI Designer</p>

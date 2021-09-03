@@ -181,6 +181,16 @@
 .portfolio-card-img {
   position: relative;
   overflow: hidden;
+
+  height: 294px;
+}
+
+.portfolio-card-img img {
+  width: 100%;
+  height: 100%;
+
+  display: block;
+  object-fit: cover;
 }
 
 .overlay {
@@ -204,3 +214,12 @@
     transform: translateY(0);
   }
 }
+
+// .portfolio-card-img__picture {
+//   object-fit: cover;
+// }
+//   // @media (max-width: 767px) {
+//   //   width: 450px;
+//   //   height: 294px;
+//   // }
+// }
