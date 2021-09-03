@@ -26,7 +26,10 @@
     transition: transform 250ms $cubic, opacity 300ms $cubic;
   }
   @media (min-width: 768px) {
-    min-width: 605px;
+    min-width: 590px;
+  }
+  @media (min-width: 1200px) {
+    min-width: 1022px;
   }
 }
 

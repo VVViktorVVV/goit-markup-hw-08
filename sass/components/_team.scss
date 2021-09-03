@@ -50,7 +50,7 @@
 .prof-cards {
   border-radius: 4px;
   box-shadow: 0px 4px 4px 0px $shadow-color;
-  width: 100%;
+  // width: 100%;
 
   @media screen and (max-width: 767px) {
     width: 100%;
@@ -60,7 +60,7 @@
     }
   }
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
     width: calc((100% - 60px) / 2);
     margin-bottom: 30px;
     margin-right: 30px;
@@ -75,6 +75,8 @@
   }
 
   @media screen and (min-width: 1200px) {
+    width: 270px;
+
     &:not(:last-child) {
       margin-right: 30px;
     }
