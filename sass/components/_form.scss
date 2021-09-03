@@ -27,8 +27,8 @@
 
   padding: 40px;
 
-  max-width: 528px;
-  max-height: 581px;
+  min-width: 450px;
+  min-height: 609px;
 
   background-color: $white-color;
   border-radius: 4px;
@@ -38,6 +38,11 @@
   .backdrop.backdrop--is-hidden & {
     transform: translate(-50%, -50%) scale(1.5);
     opacity: 0;
+
+    @media screen and (min-width: 1200) {
+      max-width: 528px;
+      max-height: 581px;
+    }
   }
 }
 
@@ -72,6 +77,12 @@
   display: block;
   margin-bottom: 10px;
   width: 100%;
+}
+
+@media (max-width: 767px) {
+  .start-form__label.start-form__comment {
+    margin-bottom: 20px;
+  }
 }
 
 .start-form__comment {
@@ -147,14 +158,19 @@
 }
 
 .start-form__rules {
-  display: inline-flex;
+  display: flex;
   align-items: center;
 
   margin-bottom: 30px;
 
-  font-size: 14px;
-  line-height: 1.71px;
+  font-size: 12px;
+  line-height: 1.17px;
   letter-spacing: 0.03em;
+
+  @media (min-width: 1200px) {
+    font-size: 14px;
+    line-height: 1.71px;
+  }
 }
 
 .start-form__checkbox {
@@ -190,5 +206,5 @@
 
 .start-form__link {
   color: $link-text-color;
-  padding-left: 4px;
+  // padding-left: 1px;
 }
