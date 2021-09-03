@@ -1860,6 +1860,13 @@ textarea:focus {
   letter-spacing: 0.03em;
 }
 
+@media (max-width: 1199px) {
+  .start-form__rules {
+    font-size: 12px;
+    line-height: 1.17px;
+  }
+}
+
 @media (min-width: 1200px) {
   .start-form__rules {
     font-size: 14px;

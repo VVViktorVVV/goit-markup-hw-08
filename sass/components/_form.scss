@@ -167,6 +167,11 @@
   line-height: 1.17px;
   letter-spacing: 0.03em;
 
+  @media (max-width: 1199px) {
+    font-size: 12px;
+    line-height: 1.17px;
+  }
+
   @media (min-width: 1200px) {
     font-size: 14px;
     line-height: 1.71px;
