@@ -1514,7 +1514,7 @@ textarea:focus {
     -webkit-justify-content: center;
         -ms-flex-pack: center;
             justify-content: center;
-    margin-bottom: 14px;
+    margin-bottom: 30px;
   }
 }
 
