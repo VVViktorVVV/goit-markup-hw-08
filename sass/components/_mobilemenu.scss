@@ -66,6 +66,8 @@
 }
 
 .mobile-menu__toggle-icon {
+  height: 40px;
+
   fill: $logo-hedeader-color;
 
   transition: fill 250ms $cubic;

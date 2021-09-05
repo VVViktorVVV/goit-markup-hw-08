@@ -93,7 +93,7 @@
   }
 
   @media (min-width: 768px) and (max-width: 1199px) {
-    width: calc((100% - 60px) / 2);
+    width: calc((100% - 30px) / 2);
     margin-right: 30px;
 
     &:nth-child(2n) {
@@ -105,7 +105,7 @@
   }
 
   @media (min-width: 1200px) {
-    width: 370px;
+    width: calc((100% - 60px) / 3);
     margin-right: 30px;
 
     &:nth-child(3n) {
@@ -214,12 +214,3 @@
     transform: translateY(0);
   }
 }
-
-// .portfolio-card-img__picture {
-//   object-fit: cover;
-// }
-//   // @media (max-width: 767px) {
-//   //   width: 450px;
-//   //   height: 294px;
-//   // }
-// }

@@ -89,9 +89,9 @@
 }
 
 .nav-list__link--active {
-  @media screen and (min-width: 768px) {
-    color: $link-text-color;
+  color: $link-text-color;
 
+  @media screen and (min-width: 768px) {
     &::after {
       position: absolute;
       bottom: -4%;
@@ -138,9 +138,6 @@
     flex-direction: column;
 
     margin-left: auto;
-
-    padding-top: 21px;
-    padding-bottom: 21px;
   }
 
   @media screen and (min-width: 1200px) {
@@ -154,6 +151,7 @@
 .contact-list__item--mail {
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     margin-bottom: 10px;
+    padding-top: 21px;
   }
   @media screen and (min-width: 1200px) {
     margin-right: 30px;
@@ -164,10 +162,15 @@
   @media screen and (max-width: 767px) {
     margin-bottom: 32px;
   }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    padding-bottom: 21px;
+  }
 }
 
 .contact-list__link {
   font-weight: 500;
+
   font-size: 34px;
   line-height: 1.18;
   letter-spacing: 0.02em;
@@ -207,6 +210,28 @@
   }
 }
 
+.contact-list__link--tel {
+  transition: color 250ms $cubic;
+
+  @media (max-width: 767px) {
+    &:hover,
+    &:focus {
+      color: $main-text-color;
+    }
+  }
+}
+
+.contact-list__link--mail {
+  transition: color 250ms $cubic;
+
+  @media (max-width: 767px) {
+    &:hover,
+    &:focus {
+      color: $link-text-color;
+    }
+  }
+}
+
 .contact-list__icon {
   @media screen and (max-width: 767px) {
     display: none;
@@ -234,6 +259,7 @@
 @media screen and (max-width: 767px) {
   .header-social-list {
     display: flex;
+    flex-wrap: wrap;
   }
 
   .header-social-list__item {
@@ -258,5 +284,12 @@
     letter-spacing: 0.02em;
 
     color: $link-text-color;
+
+    transition: color 250ms $cubic;
+
+    &:focus,
+    &:hover {
+      color: $main-text-color;
+    }
   }
 }
