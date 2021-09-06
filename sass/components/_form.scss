@@ -173,16 +173,6 @@
   line-height: 1.17;
   letter-spacing: 0.03em;
 
-  @media (max-width: 449px) {
-    font-size: 8px;
-    line-height: 3;
-  }
-
-  @media (max-width: 1199px) {
-    font-size: 12px;
-    line-height: 1.17;
-  }
-
   @media (min-width: 1200px) {
     font-size: 14px;
     line-height: 1.71;
@@ -223,5 +213,5 @@
 .start-form__link {
   display: block;
   color: $link-text-color;
-  // padding-left: 1px;
+  margin-left: 4px;
 }

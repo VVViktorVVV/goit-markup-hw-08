@@ -10,9 +10,6 @@
   .container {
     @media screen and (max-width: 767px) {
       position: relative;
-
-      padding-top: 16px;
-      padding-bottom: 16px;
     }
 
     @media screen and (min-width: 768px) {
@@ -24,10 +21,6 @@
         justify-content: space-between;
       }
     }
-
-    // @media screen and (min-width: 1200px) {
-    //   justify-content: space-between;
-    // }
   }
 }
 
@@ -151,7 +144,6 @@
 .contact-list__item--mail {
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     margin-bottom: 10px;
-    padding-top: 21px;
   }
   @media screen and (min-width: 1200px) {
     margin-right: 30px;
@@ -161,10 +153,6 @@
 .contact-list__item--tel {
   @media screen and (max-width: 767px) {
     margin-bottom: 32px;
-  }
-
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
-    padding-bottom: 21px;
   }
 }
 
@@ -219,6 +207,9 @@
       color: $main-text-color;
     }
   }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    padding-bottom: 21px;
+  }
 }
 
 .contact-list__link--mail {
@@ -229,6 +220,9 @@
     &:focus {
       color: $link-text-color;
     }
+  }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    padding-top: 21px;
   }
 }
 
